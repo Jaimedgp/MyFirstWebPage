@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Buenos dias a todos</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+        <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600" rel="stylesheet">
+		<style type="text/css">
+
+
+@media (max-width: 700px) {
+
+    body {
+        background: #FFF;
+        /*background: linear-gradient(20deg, #5D1573, #564773);*/
+        overflow-x: hidden;
+        font-family: 'Open Sans', Arial;
+    }
+
+    #canvas {
+        position: absolute;
+        top: 3em;
+        left: 0px;
+        right: 0px;
+        background: rgb(255, 255, 255);
+        overflow-y: auto;
+        z-index: 0;
+    }
+    #navbar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height:3em;
+        padding-top:1em;
+        border-bottom: 1px solid #000;
+        background: #293440;
+        display: inline;
+        z-index: 9;
+        text-align: center;
+        font-size:0.7em;
+    }
+    #nav {
+    
+        display:inline-block;
+        list-style-type: none;
+        width:auto;
+        margin: 0 auto;
+        margin-right:50px;
+        padding: 0;
+        overflow: hidden
+    }
+
+    #nav > li {
+        float: left;
+        max-width: 180px;
+        cursor: pointer
+    }
+
+    #nav > li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 0.4em;
+        text-decoration: none
+    }
+
+    #nav >li a:hover {
+        background-color: #52687F
+    }
+
+    #nav li> ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: none
+    }
+
+    #nav li:hover > ul {
+        display: block
+    }
+
+    #nav li > ul li {
+        margin: 0;
+        border-bottom: 1px solid #151515;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        background: #293440
+    }
+
+    #nav li > ul li:hover {
+        background-color: #52687F;
+        cursor: pointer
+    }
+}
+
+@media (min-width: 701px) {
+    body {
+        background: url('/home/jaimedgp/Pictures/172-1722676_abstract-polyscape.jpg') no-repeat center center fixed;
+        background-size: cover;
+        /*background: linear-gradient(20deg, #5D1573, #564773);*/
+        overflow-x: hidden;
+        font-family: 'Open Sans', Arial;
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+
+    #contenedor {
+        
+        margin-left:10%;
+        margin-right:10%;
+        margin-bottom:100px;
+
+    }
+
+    #canvas {
+        display:block;
+        
+        background: rgb(255, 255, 255);
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin:0;
+        font-family: 'Open Sans', Arial;
+        z-index: 0;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    #navbar {
+        display: block;
+        height: 80px;
+
+        background: #293440;
+        
+        border-radius: 10px 10px 0px 0px;
+        z-index: 9;
+        text-align: center;
+    }
+
+    #nav {
+    
+        display:inline-block;
+        list-style-type: none;
+        width:auto;
+        margin: 0 auto;
+        margin-right:50px;
+        padding: 0;
+        overflow: hidden;
+        font-size:23px;
+    }
+
+    #nav > li {
+        float: left;
+        cursor: pointer
+    }
+
+    #nav > li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 24px;
+        text-decoration: none
+    }
+
+    #nav >li a:hover {
+        background-color: #52687F;
+    }
+
+    #nav li> ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: none
+    }
+
+    #nav li:hover > ul {
+        display: block
+    }
+
+    #nav li > ul li {
+        margin: 0;
+        border-bottom: 1px solid #151515;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        background: #293440
+    }
+
+    #nav li > ul li:hover {
+        background-color: #52687F;
+        cursor: pointer
+    }
+}
+
+
+
+
+
+
+
+body::-webkit-scrollbar {
+    width: 10px
+}
+
+body::-webkit-scrollbar-track {
+    background: #FFF
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #DEDEDF;
+    border-radius: 10px
+}
+
+body::-moz-scrollbar {
+    width: 10px
+}
+
+body::-moz-scrollbar-track {
+    background: #FFF
+}
+
+body::-moz-scrollbar-thumb {
+    background-color: #DEDEDF;
+    border-radius: 10px
+}
+
+a {
+    text-decoration: none
+}
+
+.center {
+    text-align: center
+}
+
+
+.nav_utils li:hover {
+    background-color: #52687F
+}
+
+
+.post {
+    text-align: center;
+    padding: 60px 40px 20px 40px;
+}
+
+.post h2 {
+
+    font-weight: 100;
+    font-size:2.4rem;
+    margin:0 auto;
+    
+}
+
+.post p {
+    text-align: justify;
+    font-size:1.4rem;
+}
+		</style>
+		<script languaje="JavaScript">
+
+				window.onload=function(){
+					//document.getElementById("user_name").innerText=(new Date()).toLocaleDateString();
+				}
+		</script>
+
+	</head>
+	<body>
+        <div id="contenedor">
+    		<div id="navbar" style="text-align: center;">
+
+    		<!--<div>
+    			<input type="text" id="search_text" value="Buscar...">
+    		</div>-->
+            		<ul id="nav">
+									<li>
+										<div class="round_image"> <img src="/home/jaimedgp/Pictures/graduacion.jpeg" alt="Avatar" style="height:100%"></div></li>
+
+                        <li><a>Inicio</a></li>
+        				<li>
+        					<a id="nav_grado_text">Proyectos&nbsp;&darr;</a>
+        					<ul id="nav_grado">
+        						<li>Arduino</li>
+        						<li>Raspberry PI</li>
+        						<li>Aplicaciones</li>
+        					</ul>
+        				</li>
+        				<li>
+        					<a id="nav_curso_text">Programaci&oacute;n&nbsp;&darr;</a>
+        					<ul id="nav_curso">
+        						<li>JavaScript</li>
+        						<li>CSS</li>
+        					</ul>
+        				</li>
+        				<li>
+        					<a id="nav_asignatura_text" href="gallery2.html">Fotograf&iacute;a</a>
+        				</li>
+        			</ul>
+    		</div>
+
+    		<div id="canvas">
+                <div class="post">
+                    <h2>Bienvenido</h2>
+                    <p>
+                    Me llamo David, apodado como Pelu y, además de estudiar física, en mi tiempo libre me gusta la programación y la electrónica (aunque de ésta última poco se... jeje). Por otro lado, me gusta mucho la fotografía y la música. Mis gustos son un poco
+                    variados, voy como por temporadas: a veces me paso meses programando en C++ y otras veces dedico tiempo sólo a JavaScript. Siempre he querido montar mi propio blog o parecido, pero debido
+                    a la falta de tiempo nunca me he lanzado a la piscina... Hasta ahora.
+                    </p>
+                </div>
+    		</div>
+        </div>
+
+	</body>
+	<script languaje="JavaScript">
+	</script>
+</html>
