@@ -1,0 +1,25 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url("images/background.png");
+	background-size: cover;
+	/*background: #8D8D8D;*/
+	font-family: arial, helvetica, sans-serif;
+}
+
+@media (max-width: 1000px) {
+
+	#contenedor {
+        margin-left:10%;
+        margin-right:10%;
+        margin-bottom:100px;
+
+}
+
+
+@media (min-width: 1001px) {
+	
+
+}
+
