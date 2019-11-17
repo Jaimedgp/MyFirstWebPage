@@ -21,23 +21,38 @@ body {
 
 @media (min-width: 1001px) {
 	
+    #contenedor {
+        
+		margin-top:2%;
+        margin-left:3%;
+        margin-right:10%;
+        margin-bottom:100px;
+    }
+
+    #navbar {
+        display: block;
+        height: 80px;
+
+        background: #293440;
+        
+        border-radius: 10px 10px 10px 10px;
+        z-index: 9;
+        text-align: center;
+    }
+
     #canvas {
         display:block;
         
         background: rgb(255, 255, 255);
         overflow-y: auto;
         overflow-x: hidden;
-        margin-top:12%;
-        margin-left:1%;
+        margin-top:7%;
+        margin-left:3%;
         margin-right:35%;
         font-family: 'Open Sans', sans-serif;
         z-index: 0;
-        border-radius: 0px 0px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
     }
-
-	.center {
-		text-align: center
-	}
 
 	.post {
 		text-align: center;
@@ -46,6 +61,7 @@ body {
 
 	.post h2 {
 
+		text-align: center
 		font-weight: 100;
 		font-size:2.4rem;
 		margin:0 auto;
@@ -59,6 +75,7 @@ body {
 
 }
 
+/*
 body::-webkit-scrollbar {
 	width: 10px
 }
@@ -83,4 +100,4 @@ body::-moz-scrollbar-track {
 body::-moz-scrollbar-thumb {
 	background-color: #DEDEDF;
 	border-radius: 10px
-}
+}*/
