@@ -1,36 +1,36 @@
 html {
-	    height: 100%;
-	}
+        height: 100%;
+    }
 
 body {
-	height:100%
-	margin: 0;
-	padding: 0;
-	background: url("images/background.png");
-	font-family: arial, helvetica, sans-serif;
+    height:100%
+    margin: 0;
+    padding: 0;
+    background: url("images/background.png");
+    font-family: arial, helvetica, sans-serif;
 
-	background-repeat: no-repeat;
-	background-color: #8D8D8D;
-	background-size: auto 100%;
-	background-position: 100% 100%
+    background-repeat: no-repeat;
+    background-color: #8D8D8D;
+    background-size: auto 100%;
+    background-position: 100% 100%
 }
 
 @media (max-width: 1000px) {
 
-	#contenedor {
+    #contenedor {
         margin-left:10%;
         margin-right:10%;
         margin-bottom:100px;
-	}
+    }
 
 }
 
 
 @media (min-width: 1001px) {
-	
+    
     #contenedor {
         
-		margin-top:2%;
+        margin-top:2%;
         margin-left:3%;
         margin-right:10%;
         margin-bottom:100px;
@@ -48,7 +48,7 @@ body {
     }
 
     #nav {
-		float:left;    
+        float:left;    
 
         display:inline-block;
         list-style-type: none;
@@ -112,7 +112,7 @@ body {
         
         background: rgb(255, 255, 255);
 
-		overflow:auto;
+        overflow:auto;
 
         overflow-y: auto;
         overflow-x: hidden;
@@ -125,50 +125,50 @@ body {
 
     }
 
-	.post {
-		text-align: center;
-		padding: 60px 40px 20px 40px;
-	}
+    .post {
+        text-align: center;
+        padding: 60px 40px 20px 40px;
+    }
 
-	.post h2 {
+    .post h2 {
 
-		text-align: center
-		font-weight: 100;
-		font-size:2.4rem;
-		margin:0 auto;
-		
-	}
+        text-align: center
+        font-weight: 100;
+        font-size:2.4rem;
+        margin:0 auto;
+        
+    }
 
-	.post p {
-		text-align: justify;
-		font-size:1.4rem;
-	}
+    .post p {
+        text-align: justify;
+        font-size:1.4rem;
+    }
 
 }
 
 /*
 body::-webkit-scrollbar {
-	width: 10px
+    width: 10px
 }
 
 body::-webkit-scrollbar-track {
-	background: #FFF
+    background: #FFF
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: #DEDEDF;
-	border-radius: 10px
+    background-color: #DEDEDF;
+    border-radius: 10px
 }
 
 body::-moz-scrollbar {
-	width: 10px
+    width: 10px
 }
 
 body::-moz-scrollbar-track {
-	background: #FFF
+    background: #FFF
 }
 
 body::-moz-scrollbar-thumb {
-	background-color: #DEDEDF;
-	border-radius: 10px
+    background-color: #DEDEDF;
+    border-radius: 10px
 }*/
