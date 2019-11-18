@@ -1,11 +1,18 @@
+html {
+	    height: 100%;
+	}
 
 body {
+	height:100%
 	margin: 0;
 	padding: 0;
 	background: url("images/background.png");
-	background-size: cover;
-	/*background: #8D8D8D;*/
 	font-family: arial, helvetica, sans-serif;
+
+	background-repeat: no-repeat;
+	background-color: #8D8D8D;
+	background-size: auto 100%;
+	background-position: 100% 100%
 }
 
 @media (max-width: 1000px) {
@@ -31,7 +38,7 @@ body {
 
     #navbar {
         display: block;
-        height: 80px;
+        height: 65px;
 
         background: #293440;
         
@@ -40,18 +47,82 @@ body {
         text-align: center;
     }
 
+    #nav {
+		float:left;    
+
+        display:inline-block;
+        list-style-type: none;
+        width:auto;
+        margin: 0 auto;
+        margin-left:10%;
+        margin-right:50px;
+        padding: 0;
+        overflow: hidden;
+        font-size:20px;
+
+    }
+
+    #nav > li {
+        float: left;
+        cursor: pointer
+    }
+
+    #nav > li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 24px;
+        text-decoration: none
+    }
+
+    #nav >li a:hover {
+        background-color: #52687F;
+    }
+
+    #nav li> ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: none
+    }
+
+    #nav li:hover > ul {
+        display: block
+    }
+
+    #nav li > ul li {
+        margin: 0;
+        border-bottom: 1px solid #151515;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        background: #293440
+    }
+
+    #nav li > ul li:hover {
+        background-color: #52687F;
+        cursor: pointer
+
+    }
+
     #canvas {
         display:block;
         
         background: rgb(255, 255, 255);
+
+		overflow:auto;
+
         overflow-y: auto;
         overflow-x: hidden;
-        margin-top:7%;
+        margin-top:0%;
         margin-left:3%;
         margin-right:35%;
         font-family: 'Open Sans', sans-serif;
         z-index: 0;
         border-radius: 10px 10px 10px 10px;
+
     }
 
 	.post {
