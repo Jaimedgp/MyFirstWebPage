@@ -6,6 +6,13 @@
 .container {
 	position: relative;
 	width: 100%;
+	margin-top: 8px;
+	vertical-align: middle;
+}
+
+.header {
+	text-align: center;
+	margin-bottom:32px;
 }
 
 /* Make the image to responsive */
@@ -62,6 +69,8 @@
 	-ms-flex-wrap: wrap; /* IE 10 */
 	flex-wrap: wrap;
 	padding: 0 4px;
+
+	
 }
 
 /*.row::-webkit-scrollbar { 
@@ -70,8 +79,7 @@
 
 /* Create two equal columns that sits next to each other */
 .column {
-	-ms-flex: 50%; /* IE 10 */
-	flex: 50%;
+	width:25%;
 	padding: 0 4px;
 }
 
