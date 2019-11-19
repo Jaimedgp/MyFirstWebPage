@@ -2,6 +2,10 @@
 
 * {box-sizing: border-box}
 
+.container> img {
+	image-orientation: from-image;
+}
+
 /* Container needed to position the overlay. Adjust the width as needed */
 .container {
 	position: relative;
@@ -64,22 +68,24 @@
 }
 
 .row {
+	/*
 	display: -ms-flexbox; /* IE 10 */
 	display: flex;
 	-ms-flex-wrap: wrap; /* IE 10 */
 	flex-wrap: wrap;
 	padding: 0 4px;
 
-	
+	height: 68vh;
+	overflow-y:auto;
 }
 
-/*.row::-webkit-scrollbar { 
+.row::-webkit-scrollbar { 
 	display: none; 
-}*/
+}
 
 /* Create two equal columns that sits next to each other */
 .column {
-	width:25%;
+	width:33.33%;
 	padding: 0 4px;
 }
 
@@ -117,3 +123,4 @@
 	background-color: #666;
 	color: white;
 }
+
