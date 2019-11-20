@@ -27,21 +27,32 @@ getFiles = function(obj, colm) {
 	colm.appendChild(icontainer);
 }
 
-var text = '{ "files":[ { "src":"photos/IMG_0002.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" }, { "src":"photos/IMG_0001.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" }, { "src":"photos/IMG_0003.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" }, { "src":"photos/IMG_0004.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" }, { "src":"photos/IMG_0005.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" }, { "src":"photos/IMG_0006.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" }, { "src":"photos/IMG_0007.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" }, { "src":"photos/IMG_0008.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" }, { "src":"photos/IMG_0009.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" }, { "src":"photos/IMG_0010.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" }, { "src":"photos/IMG_0011.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" }, { "src":"photos/IMG_0012.jpg", "title":"Media Maraton", "description":"Foto de la Media Maraton de Langreo" } ] }'
+function createColumns(json) {
+	var mainRow = document.getElementsByClassName('row')[0];
+	var numRows = json.length / 12;
 
-var obj = JSON.parse(text);
+	for (j=0; j<12; j++) {
+		var elem = document.createElement('div');
+		elem.className = 'column';
 
-var numRows = obj["files"].length / 12;
-var mainRow = document.getElementsByClassName('row')[0];
+		for (i=0; i<numRows; i++) {
+			getFiles(json[i+(j*numRows)], elem)
+		}
 
-for (j=0; j<12; j++) {
-	var elem = document.createElement('div');
-	elem.className = 'column';
-
-	for (i=0; i<numRows; i++) {
-		getFiles(obj["files"][i+(j*numRows)], elem)
+		mainRow.appendChild(elem);
 	}
-
-	mainRow.appendChild(elem);
 }
 
+
+function openJSON(path) {
+	fetch(path)
+		.then(function(data) {
+			return data.json();
+		})
+		.then(function(myjson) {
+			createColumns(myjson["files"]);
+		})
+}
+
+var path = 'https://raw.githubusercontent.com/Jaimedgp/jaimedgp.github.io/master/gallery/museum.json'
+openJSON(path);
