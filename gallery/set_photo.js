@@ -29,7 +29,7 @@ getFiles = function(obj, colm) {
 
 function createColumns(json) {
 	var mainRow = document.getElementsByClassName('row')[0];
-	var numRows = json.length / 12;
+	var numRows = json.length / 12 | 0;
 
 	for (j=0; j<12; j++) {
 		var elem = document.createElement('div');
