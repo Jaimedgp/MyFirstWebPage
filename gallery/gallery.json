@@ -1,9 +1,9 @@
 { 
-	files:[
+	"files":[
 		{
-			src:"photos/IMG_0002.jpg",
-			title:"Media Maraton",
-			description:"Foto de la Media Maraton de Langreo"
+			"src":"photos/IMG_0002.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
 		},
 		{
 			"src":"photos/IMG_0001.jpg",
