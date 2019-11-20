@@ -1,0 +1,64 @@
+{ 
+	files:[
+		{
+			src:"photos/IMG_0002.jpg",
+			title:"Media Maraton",
+			description:"Foto de la Media Maraton de Langreo"
+		},
+		{
+			"src":"photos/IMG_0001.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
+		},
+		{
+			"src":"photos/IMG_0003.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
+		},
+		{
+			"src":"photos/IMG_0004.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
+		},
+		{
+			"src":"photos/IMG_0005.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
+		},
+		{
+			"src":"photos/IMG_0006.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
+		},
+		{
+			"src":"photos/IMG_0007.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
+		},
+		{
+			"src":"photos/IMG_0008.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
+		},
+		{
+			"src":"photos/IMG_0009.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
+		},
+		{
+			"src":"photos/IMG_0010.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
+		},
+		{
+			"src":"photos/IMG_0011.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
+		},
+		{
+			"src":"photos/IMG_0012.jpg",
+			"title":"Media Maraton",
+			"description":"Foto de la Media Maraton de Langreo"
+		}
+	]
+}
