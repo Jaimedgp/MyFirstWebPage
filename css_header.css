@@ -15,6 +15,31 @@ body {
     background-position: 100% 100%
 }
 
+
+.fa {
+  padding: 8.5px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+  background: rgb(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
+  opacity: 0.3
+}
+
+.fa-linkedin {
+  background: rgb(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
+  opacity: 0.3
+}
+
+
 @media (min-width: 1001px) {
     
     #contenedor {
@@ -43,7 +68,7 @@ body {
         list-style-type: none;
         width:auto;
         margin: 0 auto;
-        margin-left:10%;
+        margin-left:30px;
         margin-right:50px;
         padding: 0;
         overflow: hidden;
@@ -97,12 +122,14 @@ body {
 
     }
 
+
     /*
     .navbar-list-social {
         list-style: none;
         margin-bottom: 0; 
         background: #ffff00
     }
+    */
 
     .navbar-item-social {
         position: relative;
@@ -113,8 +140,9 @@ body {
     .navbar-link-social {
         padding: 10px;
         line-height: 6rem; 
-        color: rgb(119, 119, 119)
+        color: rgb(119, 119, 119);
     }
+
 
     #nav-social {
         float:right;    
@@ -123,14 +151,13 @@ body {
         list-style-type: none;
         width:auto;
         margin: 0 auto;
-        margin-left:10%;
-        margin-right:50px;
+        margin-left:2%;
+        margin-right:20px;
         padding: 0;
         overflow: hidden;
-        font-size:20px
+        font-size:20px;
 
     }
-    */
 
     #contentBody {
         margin-left:3%;
