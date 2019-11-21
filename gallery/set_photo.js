@@ -30,20 +30,27 @@ getFiles = function(obj, colm) {
 function createColumns(json) {
 	var mainRow = document.getElementsByClassName('row')[0];
 	var numRows = (json.length / 6 | 0) + 1;
+	var columns = new Array(6)
 
-	for (j=0; j<6; j++) {
-		var elem = document.createElement('div');
-		elem.className = 'column';
+	for (i=0; i < 6; i++) {
+		columns[i] = document.createElement('div');
+		columns[i].className = 'column';
+	}
 
-		for (i=numRows*j; i<(numRows*(j+1)); i++) {
-			if (i < json.length) {
-				getFiles(json[i], elem)
+	for (i=0; i<numRows; i++) {
+
+		for (j=6*i; j<6*(i+1); j++) {
+			if (j < json.length) {
+				getFiles(json[j], columns[j-6*i])
 			} else {
 				break;
 			}
 		}
 
-		mainRow.appendChild(elem);
+	}
+
+	for (i=0; i < 6; i++) {
+		mainRow.appendChild(columns[i]);
 	}
 }
 
