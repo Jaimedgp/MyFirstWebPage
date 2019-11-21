@@ -21,7 +21,9 @@ def readDescription(img_file):
 
 data = {"files":[]}
 path = "./photos"
-for image in glob.glob("./IMG_*"):
+images_list = sorted(glob.glob("./IMG_*"))[::-1]
+
+for image in images_list:
     name = image.split(".")
 
     src = path+name[1]+"."+name[2]
@@ -35,7 +37,6 @@ for image in glob.glob("./IMG_*"):
             'date': des_info[3],
             'place': des_info[2]
     })
-
 
 with open('../museum.json', 'w') as outfile:
         json.dump(data, outfile)
