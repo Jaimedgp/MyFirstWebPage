@@ -29,19 +29,19 @@ getFiles = function(obj, colm) {
 
 function createColumns(json) {
 	var mainRow = document.getElementsByClassName('row')[0];
-	var numRows = (json.length / 6 | 0) + 1;
-	var columns = new Array(6)
+	var numRows = (json.length / 12 | 0) + 1;
+	var columns = new Array(12)
 
-	for (i=0; i < 6; i++) {
+	for (i=0; i < 12; i++) {
 		columns[i] = document.createElement('div');
 		columns[i].className = 'column';
 	}
 
 	for (i=0; i<numRows; i++) {
 
-		for (j=6*i; j<6*(i+1); j++) {
+		for (j=12*i; j<12*(i+1); j++) {
 			if (j < json.length) {
-				getFiles(json[j], columns[j-6*i])
+				getFiles(json[j], columns[j-12*i])
 			} else {
 				break;
 			}
@@ -49,7 +49,7 @@ function createColumns(json) {
 
 	}
 
-	for (i=0; i < 6; i++) {
+	for (i=0; i < 12; i++) {
 		mainRow.appendChild(columns[i]);
 	}
 }
