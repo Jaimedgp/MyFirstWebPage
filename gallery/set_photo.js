@@ -29,14 +29,18 @@ getFiles = function(obj, colm) {
 
 function createColumns(json) {
 	var mainRow = document.getElementsByClassName('row')[0];
-	var numRows = json.length / 12 | 0;
+	var numRows = (json.length / 6 | 0) + 1;
 
-	for (j=0; j<12; j++) {
+	for (j=0; j<6; j++) {
 		var elem = document.createElement('div');
 		elem.className = 'column';
 
-		for (i=0; i<numRows; i++) {
-			getFiles(json[i+(j*numRows)], elem)
+		for (i=numRows*j; i<(numRows*(j+1)); i++) {
+			if (i < json.length) {
+				getFiles(json[i], elem)
+			} else {
+				break;
+			}
 		}
 
 		mainRow.appendChild(elem);
