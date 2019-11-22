@@ -1,6 +1,4 @@
-html {
-        height: 100%;
-    }
+html { height: 100%; }
 
 body {
     height:100%
@@ -23,9 +21,7 @@ body {
   text-decoration: none;
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
+.fa:hover { opacity: 0.7; }
 
 .fa-github {
   background: rgb(0, 0, 0, 0);
@@ -94,9 +90,7 @@ body {
         text-decoration: none
     }
 
-    #nav >li a:hover {
-        background-color: #52687F;
-    }
+    #nav >li a:hover { background-color: #52687F; }
 
     #nav li> ul {
         list-style-type: none;
@@ -107,9 +101,9 @@ body {
         display: none
     }
 
-    #nav li:hover > ul {
-        display: block;
-    }
+
+    #nav li:hover > ul { display: block; }
+
 
     #nav li > ul li {
         margin: 0;
@@ -121,6 +115,7 @@ body {
         background: #293440
     }
 
+
     #nav li > ul li:hover {
         background-color: #52687F;
         cursor: pointer
@@ -128,19 +123,12 @@ body {
     }
 
 
-    /*
-    .navbar-list-social {
-        list-style: none;
-        margin-bottom: 0; 
-        background: #ffff00
-    }
-    */
-
     .navbar-item-social {
         position: relative;
         float: left;
         margin-bottom: 0 
     }
+
 
     .navbar-link-social {
         padding: 10px;
@@ -163,6 +151,7 @@ body {
         font-size:20px;
 
     }
+
 
     #contentBody {
         margin-left:3%;
