@@ -34,9 +34,9 @@ getFiles = function(obj, colm) {
 
 function createColumns(json) {
 	var mainRow = document.getElementsByClassName('row')[0];
-	var numColumns = 3
+	var numColumns = 3;
 	var numRows = (json.length / numColumns | 0) + 1;
-	var columns = new Array(numColumns)
+	var columns = new Array(numColumns);
 
 	for (i=0; i < numColumns; i++) {
 		columns[i] = document.createElement('div');
@@ -47,7 +47,7 @@ function createColumns(json) {
 
 		for (j=numColumns*i; j<numColumns*(i+1); j++) {
 			if (j < json.length) {
-				getFiles(json[j], columns[j-numColumns*i])
+				getFiles(json[j], columns[j-numColumns*i]);
 			} else {
 				break;
 			}
