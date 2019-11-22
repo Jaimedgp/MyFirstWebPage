@@ -18,30 +18,36 @@ getFiles = function(obj, colm) {
 	iText.className = "text";
 	iText.innerHTML = obj.description;
 
+	var ileft = document.createElement('div');
+	ileft.align = "right";
+	ileft.innerHTML = "<br><br>"+obj.place+"<br>"+obj.date;
+
 	// The variable icontainer is still good... Just append to it.
 	icontainer.appendChild(iImg);
 	icontainer.appendChild(iOverlay);
 	icontainer.appendChild(iDescription);
 	iDescription.appendChild(iText);
+	iText.appendChild(ileft);
 
 	colm.appendChild(icontainer);
 }
 
 function createColumns(json) {
 	var mainRow = document.getElementsByClassName('row')[0];
-	var numRows = (json.length / 12 | 0) + 1;
-	var columns = new Array(12)
+	var numColumns = 3
+	var numRows = (json.length / numColumns | 0) + 1;
+	var columns = new Array(numColumns)
 
-	for (i=0; i < 12; i++) {
+	for (i=0; i < numColumns; i++) {
 		columns[i] = document.createElement('div');
 		columns[i].className = 'column';
 	}
 
 	for (i=0; i<numRows; i++) {
 
-		for (j=12*i; j<12*(i+1); j++) {
+		for (j=numColumns*i; j<numColumns*(i+1); j++) {
 			if (j < json.length) {
-				getFiles(json[j], columns[j-12*i])
+				getFiles(json[j], columns[j-numColumns*i])
 			} else {
 				break;
 			}
@@ -49,7 +55,7 @@ function createColumns(json) {
 
 	}
 
-	for (i=0; i < 12; i++) {
+	for (i=0; i < numColumns; i++) {
 		mainRow.appendChild(columns[i]);
 	}
 }
