@@ -90,13 +90,6 @@
     padding: 0 4px;
 }
 
-/*
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-*/
-
 
 /* When you mouse over the container, fade in the overlay title */
 .container:hover .overlay {
@@ -130,12 +123,11 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 25px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
@@ -144,8 +136,10 @@
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: auto;
+    max-width: 90%;
+    max-height: 80%;
+
 }
 
 /* Caption of Modal Image */
@@ -156,8 +150,8 @@
     max-width: 700px;
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+    padding: 5px 0;
+    min-height: 20%;
 }
 
 /* Add Animation */

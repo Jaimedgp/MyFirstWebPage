@@ -9,7 +9,10 @@ function getFiles(obj, colm) {
 	icontainer.onclick = function() {
 		modal.style.display = "block";
 		modalImg.src = obj.src;
-		captionText.innerHTML = obj.description;
+		captionText.innerHTML = "<h2>"+obj.title+"</h2>"+
+								"<p>"+obj.description+
+									"<div align='right'>"+obj.place+", "+obj.date+"</div>"
+								+"</p>";
 	};
 
 	// Now create and append to icontainer
@@ -24,10 +27,6 @@ function getFiles(obj, colm) {
 
 	/*
 	iText.innerHTML = obj.description;
-
-	var ileft = document.createElement('div');
-	ileft.align = "right";
-	ileft.innerHTML = "<br><br>"+obj.place+"<br>"+obj.date;
 	*/
 
 	// The variable icontainer is still good... Just append to it.
