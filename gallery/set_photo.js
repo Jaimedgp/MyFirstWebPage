@@ -1,9 +1,20 @@
-getFiles = function(obj, colm) {
+function getFiles(obj, colm) {
+	// Get the modal
+	var modal = document.getElementById("myModal");
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+
 	var icontainer = document.createElement('div');
 	icontainer.className = 'container';
+	icontainer.onclick = function() {
+		modal.style.display = "block";
+		modalImg.src = obj.src;
+		captionText.innerHTML = obj.description;
+	};
 
 	// Now create and append to icontainer
 	var iImg = document.createElement('img');
+	iImg.className = "myImg";
 	iImg.src = obj.src;
 	iImg.style = "width:100%";
 
@@ -11,23 +22,17 @@ getFiles = function(obj, colm) {
 	iOverlay.className = "overlay";
 	iOverlay.innerHTML = obj.title;
 
-	var iDescription = document.createElement('div');
-	iDescription.className = "description";
-
-	var iText = document.createElement('div');
-	iText.className = "text";
+	/*
 	iText.innerHTML = obj.description;
 
 	var ileft = document.createElement('div');
 	ileft.align = "right";
 	ileft.innerHTML = "<br><br>"+obj.place+"<br>"+obj.date;
+	*/
 
 	// The variable icontainer is still good... Just append to it.
 	icontainer.appendChild(iImg);
 	icontainer.appendChild(iOverlay);
-	icontainer.appendChild(iDescription);
-	iDescription.appendChild(iText);
-	iText.appendChild(ileft);
 
 	colm.appendChild(icontainer);
 }
@@ -73,3 +78,5 @@ function openJSON(path) {
 
 var path = 'https://raw.githubusercontent.com/Jaimedgp/jaimedgp.github.io/master/gallery/museum.json'
 openJSON(path);
+
+
