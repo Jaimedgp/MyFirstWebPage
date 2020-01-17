@@ -20,53 +20,40 @@
     </head>
 
     <body>
-		<div id="contenedor">
-			<div id="navbar" style="text-align: center;">
-				<ul id="nav">
-					<li> <a id="nav_asignatura_text">Inicio </a></li>
-					
-					<li>
-						<a id="nav_grado_text">Programacion</a>
-						<ul id="nav_grado">
-							<li>Python</li>
-							<li>C++</li>
-							<li>Aplicaciones</li>
-						</ul>
-					</li>
-
-					<li>
-						<a id="nav_asignatura_text" href="./gallery/gallery.html">Fotografias</a>
-					</li>
-
-					<li>
-						<a id="nav_curso_text" href="./Sports/sport.html">Deportes</a>
-					</li>
-				</ul>
-				
-				<div id="nav-social">
-					<li class="navbar-item-social">
-						<a class="fa" title="Strava Profile" href="https://www.strava.com/athletes/17781308"> 
-							<img src="./images/strava.svg" height="38px"></img>
-						</a>
-						<a class="fa fa-github" href="https://github.com/Jaimedgp" title="GitHub Page" style="font-size:48px"></a>
-						<a class="fa fa-linkedin" href="https://es.linkedin.com/in/jaimedgp" title="Linkedin Profile" style="font-size:48px"></a>
-						<a class="fa fa-file" href="https://github.com/Jaimedgp/MyPersonalDocs/raw/master/CV/CV_En.pdf" title="Curriculum Vitae" style="font-size:48px"></a>
-
-					</li>
-				</div>
-
+            <!-- Menu Icon-->
+			<div class="menu-icon" onclick="openMenu(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
 			</div>
-		</div>
 
-		<div id="contentBody">
-        <div id="canvas">
-            <div class="post">
-                    <h2>Bienvenido</h2>
-                    <p>
-					Jaime Díez, <b>graduado en Física</b> por la Universidad de Cantabria y desarrollador de software especializado en <b>Python</b>, <b>C++</b>, <b>Java</b> y <b>bases de datos relacionales</b>. Entre sus mayores proyectos resaltan el desarrollo de software de adquisición de datos en C++ para el <b>Instituto de Física de Cantabria (IFCA)</b> y distintos trabajos de programación para <b>ASESP</b>. Además, como no podría ser de otro modo, el afán de aprendizaje ha llevado a Díez a desarrollar múltiples de proyectos personales en torno a las plataformas Raspberry-Pi y Arduino.
-                    </p>
+            <!-- Menu Window-->
+            <div id="myNav" class="overlay">
+				<a class="closebtn" onclick="closeMenu()">&times;</a>
+				<div class="overlay-content">
+					<a href="#">Home Page</a>
+					<a href="#">Personal Projects</a>
+					<a href="#">Sports</a>
+					<a href="#">Gallery</a>
+				</div>
+					<div class="icons">
+						<a class="fa fa-github" href="https://github.com/Jaimedgp" 
+							title="GitHub Page" style="font-size:48px"></a>
+						<a class="fa fa-linkedin" href="https://es.linkedin.com/in/jaimedgp" 
+							title="Linkedin Profile" style="font-size:48px"></a>
+						<a class="fa fa-file" href="https://github.com/Jaimedgp/MyPersonalDocs/raw/master/CV/CV_En.pdf"
+							title="Curriculum Vitae" style="font-size:48px"></a>
+					</div>
             </div>
-        </div>
-        </div>
+            <script type="text/javascript" src="menu.js"></script>
+
+			Jaime
+            <!--Window content-->
+			<!--<div id="header">
+				<div class="title">
+					<h2> JaimeDGP </h2>
+				</div>
+			</div>-->
+
     </body>
 </html>
