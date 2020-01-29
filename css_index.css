@@ -17,15 +17,10 @@ html {
         background-position: center center;
     }
 
-	#header {
-		margin-top: 300px;
+	section {
+		display: block
 	}
-		
-	.title {
-		font-family: 'Open Sans', sans-serif;
-		color: white;
-		font-size: 100%;
-	}
+
 }
 
 
