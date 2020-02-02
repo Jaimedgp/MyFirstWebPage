@@ -21,6 +21,20 @@ html {
 		display: block
 	}
 
+    .title {
+        padding: 30px;
+        text-align: center;
+        color: white;
+
+        width: 60%;
+        float: left;
+    }
+
+    .title h1 { 
+        font-size: 200px;
+        margin-top: 20px;
+    }
+
 }
 
 
