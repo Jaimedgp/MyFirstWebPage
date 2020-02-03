@@ -45,7 +45,7 @@ section {
 
 
     .title h1 { 
-        font-size: 1750%;
+        font-size: 25vh;/*1750%;*/
         text-align: center;
 
         margin-top: 100px;
@@ -55,7 +55,7 @@ section {
     }
 
 	.title p {
-		font-size: 300%;
+		font-size: 5vh;
 		margin-top: 10px;
 
 		overflow-y: scroll;
