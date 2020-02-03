@@ -45,7 +45,7 @@ section {
 
 
     .title h1 { 
-        font-size: 200px;
+        font-size: 1750%;
         text-align: center;
 
         margin-top: 100px;
@@ -55,11 +55,13 @@ section {
     }
 
 	.title p {
-		font-size: 30px;
+		font-size: 300%;
 		margin-top: 10px;
 
 		overflow-y: scroll;
 		text-align: left;
+
+        transition: 0.5s;
 	}
 
 	.title p::-webkit-scrollbar { display: none; }
