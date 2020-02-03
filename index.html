@@ -49,16 +49,40 @@
             <script type="text/javascript" src="menu.js"></script>
 		</div>
 
+
+		<section class="presentation">
+
 			<div class="title">
-				<h1> JaimeDGP </h1>
+				<h1 id="Title"> JaimeDGP </h1>
+				<p id="description"> Physicist and MSc Data Science student </p>
 			</div>
+		</section>
 
-            <!--Window content-->
-			<!--<div id="header">
-				<div class="title">
-					<h2> JaimeDGP </h2>
-				</div>
-			</div>-->
+		<section class="photography">
 
+			<div class="title">
+				<h1 id="Title"> JaimeDGP </h1>
+				<p id="description"> Physicist and MSc Data Science student </p>
+			</div>
+		</section>
+
+	<script  type="text/javascript">
+		document.body.onscroll = function() {showDescription()};
+		title = document.getElementById("Title")
+		function showDescription () {
+			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+				//title.style.textAlign = "left";
+				title.style.fontSize = "100px";
+				title.style.marginTop = "50px";
+
+			}else {
+				//title.style.textAlign = "center";
+				title.style.fontSize = "200px";
+				title.style.marginTop = "100px";
+			}
+
+
+		}
+	</script>
     </body>
 </html>
