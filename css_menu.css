@@ -1,21 +1,24 @@
-.header {
+.mn-header {
     overflow: hidden;
     position: fixed;
+
+	z-index: 3;
 }
 
 
 /*-----MENU ICON-------*/
 
 .menu-icon {
-    display: inline;/*-block;*/
+    display: inline-block;
     cursor: pointer;
+	width: 39px;
 
     position: fixed;
     float: right;
 }
 
 .bar1, .bar2, .bar3 {
-    width: 300%;
+    width: 100%;
     height: 5px;
     background-color: rgb(255, 255, 255);
     margin: 6px 6px;
@@ -36,7 +39,7 @@
 
 /*-----MENU WINDOW-------*/
 
-.overlay {
+.mn-overlay {
     height: 0%;
     width: 100%;
     position: fixed;
@@ -49,15 +52,15 @@
     transition: 0.5s;
 }
 
-.overlay-content {
+.mn-overlay-content {
     position: relative;
-    top: 25%;
+    top: 15%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
 }
 
-.overlay a {
+.mn-overlay a {
     text-align: center;
     padding: 8px;
     text-decoration: none;
@@ -69,10 +72,10 @@
     margin-bottom: 19px;
 }
 
-.overlay a:hover,
-.overlay a:focus { color: #f1f1f1; }
+.mn-overlay a:hover,
+.mn-overlay a:focus { color: #f1f1f1; }
 
-.overlay .closebtn {
+.mn-overlay .closebtn {
     display: inline;
     cursor: pointer;
 
@@ -85,7 +88,7 @@
 /*-----MENU SOCIAL-------*/
 
 
-.icons{
+.mn-icons{
     position: absolute;
 
     display: flex;

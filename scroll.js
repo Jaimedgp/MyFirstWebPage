@@ -1,24 +1,35 @@
-document.body.onscroll = function() {showDescription()};
+//document.body.onscroll = function() {showDescription()};
 
-title = document.getElementById("Title")
-description = document.getElementById("description")
+var sections = ["presnt", "acad", "code", "sprt", "photo"];
+var ndiv=0;
+var lastScrollTop = 0;
 
 function showDescription () {
 
-	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-		//title.style.textAlign = "left";
-		title.style.fontSize = "15vh";
-		title.style.marginTop = "50px";
+	var st = window.pageYOffset || document.documentElement.scrollTop;
 
-		description.innerHTML = "Hola a todos como estamos supercalifragilisticoespialidoso"
+	if (st > 300) {
 
-	}else {
-		//title.style.textAlign = "center";
-		title.style.fontSize = "25vh";
-		title.style.marginTop = "100px";
+		if (st > lastScrollTop){
+			if (ndiv < sections.length-1 && ndiv >= 0) {
+				var hash = "#"+sections[ndiv];
+				$('html, body').animate({ scrollTop: $(hash).offset().top }, 800, 
+							function(){ window.location.hash = hash; });
+			}
+			ndiv++;
 
-		description.innerHTML = "Physicist and MSc Data Science student"
+		}else {
+			if (ndiv < sections.length && ndiv > 0) {
+
+				var hash = "#"+sections[ndiv];
+				$('html, body').animate({ scrollTop: $(hash).offset().top }, 800, 
+							function(){ 
+								window.location.hash = sections[ndiv]; 
+							});
+			}
+			ndiv--;
+		}
+
+		lastScrollTop = st <= 0 ? 0 : st;
 	}
-
-
 }

@@ -15,12 +15,13 @@
 
 		<link rel="stylesheet" type="text/css" href="./css_index.css" media="screen">
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
 
     <body>
-		<div class="header">
+		<div class="mn-header">
             <!-- Menu Icon-->
 			<div class="menu-icon" onclick="openMenu(this)">
 				<div class="bar1"></div>
@@ -29,15 +30,15 @@
 			</div>
 
             <!-- Menu Window-->
-            <div id="myNav" class="overlay">
+            <div id="myNav" class="mn-overlay">
 				<a class="closebtn" onclick="closeMenu()">&times;</a>
-				<div class="overlay-content">
-					<a href="#">Home Page</a>
+				<div class="mn-overlay-content">
+					<a href="./index.html">Home Page</a>
 					<a href="#">Personal Projects</a>
 					<a href="#">Sports</a>
-					<a href="#">Gallery</a>
+					<a href="./gallery/gallery.html">Gallery</a>
 				</div>
-					<div class="icons">
+					<div class="mn-icons">
 						<a class="fa fa-github" href="https://github.com/Jaimedgp" 
 							title="GitHub Page" style="font-size:48px"></a>
 						<a class="fa fa-linkedin" href="https://es.linkedin.com/in/jaimedgp" 
@@ -50,22 +51,84 @@
 		</div>
 
 
-		<section class="presentation">
+		<section class="presentation", id="presnt">
 
 			<div class="title">
 				<h1 id="Title"> JaimeDGP </h1>
-				<p id="description"> Physicist and MSc Data Science student </p>
+				<p id="description"> Physicist and MSc Data Science student.  Sport Lover.  Newbie in Photography
+				</p>
 			</div>
 		</section>
 
-		<section class="photography">
+		<section class="academy" id="acad">
 
-			<div class="title">
-				<h1 id="Title"> JaimeDGP </h1>
-				<p id="description"> Physicist and MSc Data Science student </p>
+			<div class="entry">
+				<div class="column">
+					<h1 id="Title"> Academy Resume </h1>
+				</div>
+				<div class="column">
+				<!--
+					<p id="description"> Pre - University Studies </p>
+					<ul>
+							<li> 2013--2015   Bachillerato Español and International Baccalaureate simultaneously. Instituto Santa Clara. High School Studies</li>
+					</ul>
+				-->
+
+					<p id="description"> University Studies </p>
+					<ul>
+							<li> 2015--2019    Degree in Physics. Universidad de Cantabria. Santander </li>
+							<li> 2016--2017    Additional training in Computer Engineering's subject Databases. Universidad de Cantabria. Santander </li>
+
+							<li> 2019--present    MSc in Data Science. Universidad de Cantabria. Santander </li>
+					</ul>
+
+					<p id="description"> Laboral Experience </p>
+					<ul>
+							<li> July--September 2018    External Intership. Intituto de Física de Cantábria. Santander. High Energy Physics and Instrumentation group. Main developer of MULTI-DAQ, a data acquisition software for an experiment of the measure of the muon life time in C++ </li>
+							<li> October 2017    Software Developer for SIPAC. Universidad Rey Juan Carlos. Madrid. Development of the software <i> Debate Timer</i> for the event SIPAC (Simulación del Parlamento Catalán) organized by the ASESP (Student association of parliamentary simulations)</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
-	<script  type="text/javascript" src="scroll.js"></script>
+		<section class="code" id="code">
+
+			<div class="entry">
+				<div class="column">
+					<h1 id="Title"> Code Developer </h1>
+				</div>
+				<div class="column">
+					<p id="description"> Java, Python, C/C++, git. Intermediate Level. Completed university courses in Java, including the use of BlueJ and Eclipse IDE. \newline Personal projects and laboratory data analises realized in Python, including GUI development and experience using PyQt, NumPy and Matplotlib. Complete development of a data acquisition program in C++, including GUI development with Ncurses and cdk. MatLab, Fortran, HTML, bash scripting, MySql and SQL Server. Basic knowledge with experince and a university course in SQL </p>
+				</div>
+			</div>
+		</section>
+
+		<section class="sport" id="sprt">
+
+			<div class="entry">
+				<div class="column">
+					<h1 id="Title"> Handball and Tri </h1>
+				</div>
+				<div class="column">
+					<p id="description"> 2012--2019    Handball Referee. 7 years of handball refereeing. Highest Category: Top Regional Referee. Refereed several National-level Championships included the 2018 National escolar Championship  </p>
+				</div>
+			</div>
+		</section>
+
+		<section class="photography" id="photo">
+
+			<div class="entry">
+				<div class="column">
+					<h1 id="Title"> Photography </h1>
+				</div>
+				<div class="column">
+					<p id="description"> Physicist and MSc Data Science student </p>
+
+					<a href="./gallery/gallery.html"> link to galley </a>
+				</div>
+			</div>
+		</section>
+
+		<script  type="text/javascript" src="scroll.js"></script>
     </body>
 </html>

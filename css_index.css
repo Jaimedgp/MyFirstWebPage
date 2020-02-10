@@ -26,10 +26,57 @@ section {
         background-image: url("./images/background_min.png");
         background-color: rgb(28, 28, 28);
         background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center center;
+    }
+    .photography {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+        background-image: url("./images/photographer.jpg");
+        background-color: rgb(28, 28, 28);
+        background-repeat: no-repeat;
+        background-size: cover;/*100% auto;*/
+        background-position: center center;
+    }
+    .sport {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+        background-image: url("./images/deporte.JPG");
+        background-color: rgb(28, 28, 28);
+        background-repeat: no-repeat;
         background-size: cover;/*100% auto;*/
         background-position: center center;
 
-		display: block;
+		position: relative;
+		z-index: 2;
+    }
+    .academy {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+		background-image: url("./images/estudios1.JPG");
+        background-color: rgb(28, 28, 28);
+        background-repeat: no-repeat;
+        background-size: cover;/*100% auto;*/
+        background-position: center center;
+
+    }
+    .code {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+        background-image: url("./images/photographer.jpg");
+        background-color: rgb(28, 28, 28);
+        background-repeat: no-repeat;
+        background-size: cover;/*100% auto;*/
+        background-position: center center;
+
     }
 
 
@@ -41,6 +88,7 @@ section {
 
         width: 75%;
         float: left;
+
     }
 
 
@@ -55,30 +103,47 @@ section {
     }
 
 	.title p {
-		font-size: 5vh;
+		font-size: 4.5vh;
 		margin-top: 10px;
 
-		overflow-y: scroll;
 		text-align: left;
 
         transition: 0.5s;
 	}
 
-	.title p::-webkit-scrollbar { display: none; }
 
+    .entry {
+        padding: 30px;
+        color: white;
+		margin-left: 10px;
+		height: 90vh;
 
-    .photography {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-
-        background-image: url("./images/photographer.jpg");
-        background-color: rgb(28, 28, 28);
-        background-repeat: no-repeat;
-        background-size: cover;/*100% auto;*/
-        background-position: center center;
+		display: flex;
 
     }
+
+	.column {
+		flex: 50%;
+		padding: 10px;
+	}
+
+    .column h1 { 
+        font-size: 15vh;
+        text-align: center;
+
+        width: 90%;
+    }
+
+	.column p {
+		font-size: 4.5vh;
+
+	}
+
+	.column > ul {
+		font-size: 3vh;
+
+	}
+
 }
 
 
