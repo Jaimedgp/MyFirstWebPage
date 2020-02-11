@@ -32,7 +32,7 @@ function getFiles(obj, colm, modalArr) {
 
 function createColumns(json) {
 	var mainRow = document.getElementsByClassName('row')[0];
-	var numColumns = 3;
+	var numColumns = 4;
 	var numRows = (json.length / numColumns | 0) + 1;
 	var columns = new Array(numColumns);
 
@@ -72,6 +72,7 @@ function fillColumn(colArr, numRows, json) {
 
 function openGallery() {
 	var path = 'https://raw.githubusercontent.com/Jaimedgp/jaimedgp.github.io/master/gallery/museum.json';
+	//var path = "./museum.json";
 	fetch(path)
 		.then(function(data) {
 			return data.json();
