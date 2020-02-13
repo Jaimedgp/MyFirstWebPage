@@ -71,7 +71,7 @@ section {
         margin: 0;
         padding: 0;
 
-        background-image: url("./images/photographer.jpg");
+        background-image: url("./images/background_min.png");
         background-color: rgb(28, 28, 28);
         background-repeat: no-repeat;
         background-size: cover;/*100% auto;*/
