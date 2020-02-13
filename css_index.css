@@ -51,8 +51,6 @@ section {
         background-size: cover;/*100% auto;*/
         background-position: center center;
 
-		position: relative;
-		z-index: 2;
     }
     .academy {
         height: 100vh;
