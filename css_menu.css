@@ -53,7 +53,7 @@
 }
 
 .mn-overlay-content {
-    position: relative;
+    position: absolute;
     top: 15%;
     width: 100%;
     text-align: center;
@@ -64,7 +64,7 @@
     text-align: center;
     padding: 8px;
     text-decoration: none;
-    font-size: 450%;
+    font-size: 10vh;
     color: #818181;
     display: block;
     transition: 0.3s;
