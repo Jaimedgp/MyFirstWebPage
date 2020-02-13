@@ -71,7 +71,7 @@ function fillColumn(colArr, numRows, json) {
 
 
 function openGallery() {
-	var path = 'https://raw.githubusercontent.com/Jaimedgp/jaimedgp.github.io/master/gallery/museum.json';
+	var path = 'https://raw.githubusercontent.com/Jaimedgp/jaimedgp.github.io/master/Gallery/museum.json';
 	//var path = "./museum.json";
 	fetch(path)
 		.then(function(data) {
