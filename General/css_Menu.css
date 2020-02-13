@@ -19,7 +19,7 @@ body::-webkit-scrollbar { display: none; }
 	height: 33vh;
 	z-index: 1;
 
-	background-color: rgb(28, 28, 28);
+	background-color: rgb(20, 20, 20);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center center;

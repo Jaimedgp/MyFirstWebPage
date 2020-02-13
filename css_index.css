@@ -24,41 +24,44 @@ section {
     .presentation {
 
         background-image: url("./images/background_min.png");
-        background-color: rgb(28, 28, 28);
+        background-color: rgb(0, 0, 0);
         background-repeat: no-repeat;
         background-size: 100% auto;
         background-position: center center;
     }
+
+
     .photography {
         height: 100vh;
         margin: 0;
         padding: 0;
 
         background-image: url("./images/photographer.jpg");
-        background-color: rgb(28, 28, 28);
         background-repeat: no-repeat;
         background-size: cover;/*100% auto;*/
         background-position: center center;
     }
+
+
     .sport {
         height: 100vh;
         margin: 0;
         padding: 0;
 
         background-image: url("./images/deporte.JPG");
-        background-color: rgb(28, 28, 28);
         background-repeat: no-repeat;
         background-size: cover;/*100% auto;*/
         background-position: center center;
 
     }
+
+
     .academy {
         height: 100vh;
         margin: 0;
         padding: 0;
 
-		background-image: url("./images/estudios1.JPG");
-        background-color: rgb(28, 28, 28);
+		background-image: url("./images/estudios.JPG");
         background-repeat: no-repeat;
         background-size: cover;/*100% auto;*/
         background-position: center center;
@@ -70,7 +73,7 @@ section {
         padding: 0;
 
         background-image: url("./images/background_min.png");
-        background-color: rgb(28, 28, 28);
+        background-color: rgb(0, 0, 0);
         background-repeat: no-repeat;
         background-size: cover;/*100% auto;*/
         background-position: center center;
@@ -91,7 +94,7 @@ section {
 
 
     .title h1 { 
-        font-size: 25vh;/*1750%;*/
+        font-size: 14vw;
         text-align: center;
 
         margin-top: 100px;
@@ -101,7 +104,7 @@ section {
     }
 
 	.title p {
-		font-size: 4.5vh;
+		font-size: 2.35vw;
 		margin-top: 10px;
 
 		text-align: left;
@@ -121,41 +124,90 @@ section {
     }
 
 	.column {
-		flex: 50%;
+		flex: 70%;
 		padding: 10px;
+		font-size: 4.5vh;
 	}
 
     .column h1 { 
-        font-size: 15vh;
+        font-size: 10vw;
         text-align: center;
 
         width: 90%;
     }
 
-	.column p {
-		font-size: 4.5vh;
 
+	table { 
+		border: 0px solid black;
+		font-size: 2.5vh;
 	}
 
-	.column > ul {
-		font-size: 3vh;
 
-	}
+	.column a { color: white; }
 
 }
 
 
 @media (max-aspect-ratio: 321/200){
-    body {
+    .presentation {
         height:100%
         margin: 0;
         padding: 0;
 
         background-image: url("./images/background_max.png");
-        background-color: rgb( 28,  28,  28);
+        background-color: rgb( 0,  0,  0);
         background-repeat: no-repeat;
-        background-size: 100% auto;
+        background-size: auto 100%;
         background-position: center center;
     }
+    .photography {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+        background-image: url("./images/photographer.jpg");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: left center;
+    }
+
+
+    .sport {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+        background-image: url("./images/deporte.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;/*100% auto;*/
+        background-position: left center;
+
+    }
+
+
+    .academy {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+		background-image: url("./images/estudios.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;/*100% auto;*/
+        background-position: left center;
+
+    }
+    .code {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+        background-image: url("./images/background_min.png");
+        background-color: rgb(0, 0, 0);
+        background-repeat: no-repeat;
+        background-size: cover;/*100% auto;*/
+        background-position: left center;
+
+    }
+
 }
 
