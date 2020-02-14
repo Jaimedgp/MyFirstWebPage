@@ -12,202 +12,181 @@ body{
 
 body::-webkit-scrollbar { display: none; }
 
+table { border: 0px solid black; }
+	
 section {
 	height: 100vh;
 	width: 100vw;
 	margin: 0;
 	padding: 0;
+
+	background-repeat: no-repeat;
+	background-color: rgb(0, 0, 0);
+
+	color: white;
 }
 
 
 @media (min-aspect-ratio: 32/20){
-    .presentation {
-
-        background-image: url("./images/background_min.png");
-        background-color: rgb(0, 0, 0);
-        background-repeat: no-repeat;
+	
+	section {
         background-size: 100% auto;
         background-position: center center;
-    }
+	}
 
 
-    .photography {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
+    #presentation { background-image: url("./images/background_min.png"); }
 
-        background-image: url("./images/photographer.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;/*100% auto;*/
-        background-position: center center;
-    }
+    #photography { background-image: url("./images/photographer.jpg"); }
 
+    #sport { background-image: url("./images/deporte.jpg"); }
 
-    .sport {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
+    #academy { background-image: url("./images/estudios.JPG"); }
 
-        background-image: url("./images/deporte.JPG");
-        background-repeat: no-repeat;
-        background-size: cover;/*100% auto;*/
-        background-position: center center;
-
-    }
+    #code { background-image: url("./images/background_min.png"); }
 
 
-    .academy {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-
-		background-image: url("./images/estudios.JPG");
-        background-repeat: no-repeat;
-        background-size: cover;/*100% auto;*/
-        background-position: center center;
-
-    }
-    .code {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-
-        background-image: url("./images/background_min.png");
-        background-color: rgb(0, 0, 0);
-        background-repeat: no-repeat;
-        background-size: cover;/*100% auto;*/
-        background-position: center center;
-
-    }
-
-
+	/* PRESENTATION TITLE */
     .title {
         padding: 30px;
-        color: white;
 		margin-left: 10px;
 		height: 90vh;
 
         width: 75%;
         float: left;
-
     }
 
 
-    .title h1 { 
+    .title > h1 { 
         font-size: 14vw;
         text-align: center;
-
         margin-top: 100px;
 		margin-bottom: 0px;
 
 		transition: 0.5s;
     }
 
-	.title p {
+	.title > p {
 		font-size: 2.35vw;
-		margin-top: 10px;
-
 		text-align: left;
+		margin-top: 10px;
 
         transition: 0.5s;
 	}
 
 
+	/* SECTIONS PARTS */
     .entry {
-        padding: 30px;
-        color: white;
-		margin-left: 10px;
-		height: 90vh;
-
+		height: 85vh;
 		display: flex;
-
     }
 
 	.column {
 		flex: 70%;
 		padding: 10px;
-		font-size: 4.5vh;
 	}
 
-    .column h1 { 
+
+	#description > p { font-size: 4.5vh; }
+	#description > td { font-size: 2.5vh; }
+
+    #Title >  h1 { 
         font-size: 10vw;
         text-align: center;
 
-        width: 90%;
+        margin-top: 25vh;
     }
 
+	.link-page > a { color: white; }
 
-	table { 
-		border: 0px solid black;
-		font-size: 2.5vh;
+	.link-page { 
+		font-size: 4.5vh;
+		margin: 5vh;
 	}
-
-
-	.column a { color: white; }
 
 }
 
 
 @media (max-aspect-ratio: 321/200){
-    .presentation {
-        height:100%
-        margin: 0;
-        padding: 0;
-
-        background-image: url("./images/background_max.png");
-        background-color: rgb( 0,  0,  0);
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-        background-position: center center;
-    }
-    .photography {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-
-        background-image: url("./images/photographer.jpg");
-        background-repeat: no-repeat;
+	section {
         background-size: auto 100%;
         background-position: left center;
+
+		position: relative;
+	}
+
+
+    #presentation { background-image: url("./images/background_max.png"); }
+
+    #photography { background-image: url("./images/photographer.jpg"); }
+
+    #sport { background-image: url("./images/deporte.jpg"); }
+
+    #academy { background-image: url("./images/estudios.JPG"); }
+
+    #code { background-image: url("./images/background_min.png"); } 
+
+	/* PRESENTATION TITLE */
+    .title {
+        padding: 0px;
+		margin-left: 0px;
+		height: 90vh;
+
+        width: 100%;
+        float: center;
+
+		position: absolute;
     }
 
 
-    .sport {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
+    .title > h1 { 
+        font-size: 20vw;
+        text-align: center;
+        margin-top: 35vh;
+		margin-bottom: 0px;
 
-        background-image: url("./images/deporte.JPG");
-        background-repeat: no-repeat;
-        background-size: cover;/*100% auto;*/
-        background-position: left center;
-
+		transition: 0.5s;
     }
 
+	.title > p {
+		font-size: 5vw;
+		text-align: center;
+        margin-top: 15%;
 
-    .academy {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
+        transition: 0.5s;
+	}
 
-		background-image: url("./images/estudios.JPG");
-        background-repeat: no-repeat;
-        background-size: cover;/*100% auto;*/
-        background-position: left center;
 
-    }
-    .code {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-
-        background-image: url("./images/background_min.png");
-        background-color: rgb(0, 0, 0);
-        background-repeat: no-repeat;
-        background-size: cover;/*100% auto;*/
-        background-position: left center;
-
+	/* SECTIONS PARTS */
+    .entry {
+		height: 93vh;
+		display: flex;
+		flex-direction: column;
     }
 
+	.column {
+		padding: 0px;
+        text-align: center;
+	}
+
+
+	#description > p { font-size: 3.0vh; }
+
+	#description > td { font-size: 1.5vh; }
+
+    #Title >  h1 { 
+        font-size: 15vw;
+        text-align: center;
+
+        margin-top: 10vh;
+    }
+
+	.link-page > a { color: white; }
+
+	.link-page { 
+		font-size: 3.5vh;
+		margin: 1vh;
+		text-align: center;
+	}
 }
 
