@@ -1,10 +1,20 @@
+
+@media (min-aspect-ratio: 32/20){
+	.column {
+		width: 25%;
+	}
+}
+
+@media (max-aspect-ratio: 321/200){
+	.column {
+		width: 100%;
+	}
+}
+
 /* MOSAIC STRUCTURE */
 
 	/* Create two equal columns that sits next to each other */
-	.column {
-		width: 25%;
-		padding: 0 15px; 
-	}
+	.column { padding: 0 15px; }
 
 
 /* IMAGE CELL */
