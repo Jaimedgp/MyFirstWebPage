@@ -11,8 +11,6 @@ Resumen Academico:
 Codigo de programacion:
     ☐ Rehacer el resumen 
     ☐ Poner de fondo de pantalla la foto del codigo pero + opaco
-    ✔ Link a la pagina de los codigos  @done(2020-02-13 12:33)
-    @project(Codigo de programacion)
 
 Deporte:
     ☐ Cambiar el fondo de pantalla por una foto mas difuminada
@@ -22,5 +20,8 @@ Photography:
     ☐ Rehacer el resumen de la fotografia
 
 Menu:
-    ✔ cerrar el menu cuando se click @done(2020-02-13 12:37)
-    @project(Menu)
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+✔ Link a la pagina de los codigos  @done(2020-02-13 12:33) @project(Codigo de programacion)
+✔ cerrar el menu cuando se click @done(2020-02-13 12:37) @project(Menu)
