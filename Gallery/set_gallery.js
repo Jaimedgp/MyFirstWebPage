@@ -7,8 +7,7 @@ function getFiles(obj, colm, modalArr) {
 		modalArr[0].style.display = "block";
 		modalArr[1].src = obj.src;
 		modalArr[2].innerHTML = "<h2>"+obj.title+"</h2>"+
-								"<p>"+obj.description+
-									"<div align='right'>"+obj.place+", "+obj.date+"</div>"
+								"<div align='right'>"+obj.place+", "+obj.date+"</div>"
 								+"</p>";
 	};
 
