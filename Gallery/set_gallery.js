@@ -31,7 +31,7 @@ function getFiles(obj, colm, modalArr) {
 
 function createColumns(json) {
 	var mainRow = document.getElementsByClassName('row')[0];
-	var numColumns = 4;
+	var numColumns = 3;
 	var numRows = (json.length / numColumns | 0) + 1;
 	var columns = new Array(numColumns);
 
